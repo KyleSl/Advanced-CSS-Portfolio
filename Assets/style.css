@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: cursive;
+  font-family: "roboto", sans-serif;
 }
 
 a {
@@ -18,8 +18,8 @@ li {
 
 #nav-bar {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
+  align-items: center;
   padding: 0;
   color: #fff;
   background-image: url(https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
@@ -27,6 +27,7 @@ li {
 
 #nav-bar h2 {
   font-size: 300%;
+  font-weight: bold;
   padding: 2%;
 }
 
@@ -34,20 +35,29 @@ li {
   gap: 0;
   display: flex;
   min-width: 30%;
+  justify-content: space-between;
 }
 
 #nav-list li a {
+  padding: 5%;
+  font-weight: 100;
   color: #fff;
+  border-radius: 20px;
+}
+
+#nav-list li:hover a {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s ease;
 }
 
 #nav-list li {
+  border-left: 2px solid white;
   white-space: nowrap;
   text-overflow: none;
   overflow: hidden;
-  padding: 10%;
-  background-color: rgba(255, 0, 255, 0.4);
+  /* background-color: rgba(255, 0, 255, 0.4);
   border-left: 3px solid;
-  border-color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 1); */
   text-align: center;
   justify-content: center;
   flex: 1;
@@ -55,17 +65,10 @@ li {
 
 .dropdown {
   background-color: rgb(104, 34, 98);
-  padding: 0;
-  margin-top: 3%;
-  position: absolute; /*WITH RESPECT TO PARENT*/
+  padding: 2px;
+  margin-top: 0%;
+  position: fixed;
   display: none;
-  border-radius: 8px;
-  top: 35px;
-}
-
-#nav-list li:hover {
-  background-color: rgb(104, 34, 98);
-  transition: 0.3s ease;
 }
 
 #nav-dropdown:hover .dropdown {
@@ -73,5 +76,7 @@ li {
 }
 
 .dropdown li {
-  padding: 5%;
+  padding: 2%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
 }
