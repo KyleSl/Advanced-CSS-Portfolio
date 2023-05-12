@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="./Assets/reset.css" />
     <link rel="stylesheet" href="./Assets/style.css" />
   </head>
-  <section id="bg-img">
-    <nav id="nav-container">
-      <h1 id="nav-title">Portfolio</h1>
-      <ul id="nav-list">
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#projects">My Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
+
+  <section id="nav-bar">
+    <h2>Portfolio</h2>
+    <ul id="nav-list">
+      <li><a href="#about-me">About Me</a></li>
+      <li id="nav-dropdown">
+        <a href="#projects">Projects</a>
+        <ul class="dropdown">
+          <li><a href="#website">Website</a></li>
+          <li><a href="#neural-network">Neural Network</a></li>
+          <li><a href="#chess-bot">Chess Bot</a></li>
+        </ul>
+      </li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </section>
+
   <body>
     <section id="about-me">
       <h2>About Me</h2>
