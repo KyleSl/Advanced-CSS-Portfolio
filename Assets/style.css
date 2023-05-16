@@ -58,6 +58,7 @@ li {
 
 .nav-list li {
   border-left: 2px solid white;
+  padding: 2%;
   white-space: nowrap;
   text-align: center;
   justify-content: center;
@@ -67,7 +68,7 @@ li {
 .dropdown {
   padding: 0px;
   margin: auto;
-  position: fixed;
+  position: relative;
   display: none;
 }
 
