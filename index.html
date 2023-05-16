@@ -16,15 +16,15 @@
   </head>
 
   <section id="nav-bar">
-    <h2>Portfolio</h2>
+    <h2>Kyle Slaughter</h2>
     <ul class="nav-list">
       <li><a href="#about-me">ABOUT ME</a></li>
       <li id="nav-dropdown">
         <a href="#projects">PROJECTS</a>
         <ul class="dropdown">
-          <li><a href="#website">WEBSITE</a></li>
-          <li><a href="#neural-network">NEURAL NETWORK</a></li>
-          <li><a href="#chess-bot">CHESS BOT</a></li>
+          <li><a href="#fourth">Portfolio</a></li>
+          <li><a href="#second">NEURAL NETWORK</a></li>
+          <li><a href="#first">CHESS BOT</a></li>
         </ul>
       </li>
       <li><a href="#contact">CONTACT</a></li>
@@ -47,36 +47,28 @@
         cool and I've made my own neural network from scratch in c++.
       </p>
     </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <section class="project-bar">
-            <h3>Chess Bot*</h3>
-            <p>
-              This project is unfinished. It is meant to be a chess bot that a
-              user could play against. I was originally using brute force
-              methods to find moves to play but after I started creating the
-              neural network, I thought it would be better to apply that to my
-              bot.
-            </p>
-          </section>
-        </li>
-        <li>
-          <section class="project-bar">
-            <h3>Neural Network*</h3>
-            <p>
-              This project is unfinished. This is the project I'm most proud of.
-              I made it in c++ and it uses a class called network that allows
-              you to initialize and use a neural network with any amount of
-              neurons. I'm very proud of it because I figured it out on my own
-              and it was so rewarding when I got it to work. I plan to
-              eventually apply it to a connect 4 game and use reinforcement
-              learning to teach it.
-            </p>
-          </section>
-        </li>
-      </ul>
+    <h2 id="project-header">Projects</h2>
+    <section id="projects" class="flex-container">
+      <section class="project-card" id="first">
+        <h3>Chess Bot</h3>
+        <h2>C++</h2>
+      </section>
+      <section class="project-card" id="second">
+        <h3>Neural Network</h3>
+        <h2>C++</h2>
+      </section>
+      <section class="project-card" id="third">
+        <h3>Rock, Paper, Scissors</h3>
+        <h2>HTML CSS JS</h2>
+      </section>
+      <section class="project-card" id="fourth">
+        <h3>Portfolio</h3>
+        <h2>HTML CSS JS</h2>
+      </section>
+      <section class="project-card" id="fifth">
+        <h3>Data Structures</h3>
+        <h2>C++</h2>
+      </section>
     </section>
     <section id="contact">
       <h3>Contact</h3>
@@ -90,5 +82,6 @@
         <li>Email: Kyleslaughter8@gmail.com</li>
       </ul>
     </section>
+    <footer></footer>
   </body>
 </html>
