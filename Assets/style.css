@@ -70,6 +70,8 @@ li {
   margin: auto;
   position: relative;
   display: none;
+  top:100%;
+  left:0;
 }
 
 #nav-dropdown:hover .dropdown {
